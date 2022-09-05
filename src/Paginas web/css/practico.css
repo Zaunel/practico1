@@ -4,53 +4,52 @@
 }
 
 body {
+     background: url('../imagenes/fondoinicio.png');
+     background-repeat: no-repeat;
+     background-position: top;
+     background-color: black;
+     display: flex;
+     justify-content: center;
+     position: relative;
+
    
-    background: url('../imagenes/fondoinicio.png');
-    background-repeat: no-repeat;
-    background-position: top;
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    
 }
 
-.img-logo {
-    width: 250px;
-    margin-left: 140%;
-    margin-top: 5%;
-}
 
 .caja-padre {
     width: 840px;
-    height: 500px;
-    display:flex;
+    display: flex;
     position: absolute;
-    justify-content: center;
-    margin-top: 114px;
+    top: 112px;
     
     
 }
 
+.img  {
+    width: 100%;
+    border-radius: 2px;
+}
 
-.imagen-hijo {
-    width: 99.1%;
-   
+
+.logo-padre {
+    display: flex;
+}
+
+.logo-hijo {
+    width: 300px;
 }
 
 .boton-padre {
-    margin-top: 665px;
-    margin-right: 10px;
+    width: 700px;
+    color: white;
+    display: flex;
+    justify-content:space-between;
+    position: absolute;
+    top: 660px;
+    margin-right: 15px;
 }
 
-.boton-padre1 {
-    margin-top: 665px;
-    margin-right: 290px;
-    position: relative;
-
-    
-}
-
-.boton-padre:hover {
-    opacity: .8;
+.boton:hover {
+  opacity: .8;
 }
 
