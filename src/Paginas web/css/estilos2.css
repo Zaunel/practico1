@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url(../imagenes/fondo.jpg) ;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+
+.cajaPadre {
+    background: rgb(163, 1, 1);
+    width: 700px;
+    overflow: hidden;
+    margin: 20px;
+
+    
+}
+
+.caja {
+    width: 200px;
+    height: 200px;
+    color: black;
+    font-size: 20px;
+    background-color: aliceblue;
+    margin: 20px;
+}
+
+.uno {
+    float: left;
+}
+
+.dos {
+    float: right;
+}
+
+.articulo {
+    width: 800px;
+    background: rgb(82, 82, 82);
+}
+
+.articulo img {
+    float: left;
+}
+/*
+div, a, .parrafo{
+      background-color: gray;
+      color: white;
+      margin-top:10px;
+      margin-left: 10px;
+      margin-bottom: 10px;
+
+}
+*/
+ a {
+     /*display: none;
+     visibility: hidden;*/
+     background-color: blue;
+     color: white;
+     padding: 20px;
+     display:inline-block; 
+}
+
+
+.cajita {
+    width: 200px;
+    color: white;
+    background-color: green;
+    height: 200px;
+    overflow: auto;
+    margin-bottom: 10px;
+
+}
+
+.contenedor {
+    background-color: orange;
+    width: 500px;
+    overflow: hidden;
+    margin: 20px 0;
+    
+}
+
+.izquierda {
+    float: right;
+}
+
+.derecha {
+    float: left;
+}
+
+.Padre {
+    background-color: gray;
+}
+
+.caja {
+    width: 150px;
+    height: 150px;
+    position: relative;
+}
+
+.azul{
+    background-color: blue;
+    z-index: 10;
+}
+
+.roja {
+    background-color: red;
+    bottom: 100px;
+    left: 50px;
+    z-index: 9;
+}
+/*
+.clear {
+    clear: both;
+}*/
+/*
+.caja {
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    float: left;
+} 
+
+.caja_padre {
+    background-color: blueviolet;
+    margin: 20px;
+    width: 500px;
+    height: 500px;
+    position: relative;
+}
+
+
+
+.posicionada {
+    background-color: blue;
+    position: absolute;
+    top: ;
+    right: ;
+    left: 200px ;
+    bottom: ;
+    
+}
+*/
