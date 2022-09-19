@@ -1,0 +1,490 @@
+/* En todos los html */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-family:"Cambria";
+}
+
+body {
+    background: url('../imagenes/textura.jpg');
+    background-repeat: repeat;
+    position: relative;
+    min-height: 100vh;
+}
+
+.header {
+    background: url(../imagenes/nav.png);
+    display: flex;
+    background-size: cover;
+    justify-content: flex-end;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    position: fixed;
+    padding: 0 2%;
+    top: 0;
+    z-index: 100;
+}
+
+.header .logo {
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.header .logo img{
+    height: 70px;
+    width: auto;
+    transition: all 0.3s;
+}
+
+.header .logo img:hover{
+    transform: scale(1.2);
+}
+
+.header .nav-links{
+    list-style: none;
+}
+
+.header .nav-links li{
+    display: inline-block;
+    padding: 0 20px;
+    font-weight: bold;
+}
+
+.header .nav-links li:hover{
+    transform: scale(1.1);
+}
+
+.header .nav-links a{
+    font-size: 700;
+    color: white;
+    text-decoration: none;
+}
+
+.header .nav-links li a:hover{
+   color: #D6A022;
+}
+
+.header .btn button{
+    margin-left: 20px;
+    font-weight: 700;
+    color: #1b3039;
+    padding: 9px 25px;
+    background: #ffffff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.header .btn button:hover{
+    background-color: #000000;
+    color: #D6A022;
+    transform: scale(1.1);
+}
+
+.social-bar {
+    position: fixed;
+    right: 0;
+    top: 40%;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.box-facebook{
+    width: 50px;
+    height: 50px;
+    background-color: rgba(25,118,210,255);
+    transition: all 1s ease;
+    border-radius: 60px 0 0 0;
+}
+
+.box-twitter{
+    width: 50px;
+    height: 50px;
+    background-color: rgba(3,169,244,255);
+    transition: all 1s ease;
+}
+
+.box-youtube{
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255,0,0,255);
+    transition: all 1s ease;
+}
+
+.box-twitch{
+    width: 50px;
+    height: 50px;
+    background-color: rgba(100,65,165,255);
+    transition: all 1s ease;
+    border-radius: 0 0 0 60px;
+}
+
+
+.icon-facebook {
+    width: 50px;
+    border-radius: 20px 0 0 0;
+}
+
+.icon-twitter {
+    width: 50px;
+}
+
+.icon-youtube {
+    width: 50px;
+}
+
+.icon-twitch {
+    width: 50px;
+    border-radius: 0 0 0 20px;
+}
+
+
+.box-facebook:hover {
+    padding-right: 100px;
+    background-color: rgba(25,118,210,255);
+}
+
+.box-twitter:hover {
+    padding-right: 100px;
+    background-color: rgba(3,169,244,255);
+}
+
+.box-youtube:hover {
+    padding-right: 100px;
+    background-color: rgba(255,0,0,255);
+}
+
+.box-twitch:hover {
+   padding-right: 100px;
+   background-color: rgba(100,65,165,255);
+}
+
+
+
+/* Inicio */
+
+.body-inicio {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 150px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.padre-body{
+    display: flex;
+    background: radial-gradient(rgb(67, 8, 8), black ) no-repeat;
+    width: 1500px;
+    border:double 20px #D6A022;
+    justify-content: space-between;
+}
+
+.contenedor-tabla {
+    margin-top: 70px;
+    margin-left: 30px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    align-self: flex-start;
+}
+
+
+.titulo-tabla h2 {
+    text-align: center;
+    color: rgb(226, 223, 5);
+    margin-bottom: 2px;
+}
+
+table {
+    border-collapse: collapse;
+    text-align: center;
+    height: 300px;
+    border-left: solid #D6A022 4px;
+    border-right: solid #D6A022 4px;
+}
+
+thead {
+    background-color: #000000;
+    border-bottom: solid #D6A022 4px;
+    border-top: solid #D6A022 4px;
+}
+
+th {
+    font-size: 15px;
+    padding: 8px 15px;
+    color: white;
+    text-transform: uppercase;
+    height: 50px;
+}
+
+td {
+    font-size: 12px;
+    color: #ffffff;
+    border-bottom: solid #D6A022;
+}
+
+tbody tr{
+    cursor: pointer;
+}
+
+tbody tr:hover {
+    background-color: rgb(238, 0, 0);
+}
+
+.t1 {
+    margin-bottom: 20px;
+}
+
+.t2 { 
+    margin-bottom: 20px;
+}
+
+.imagen-inicio {
+    width: 700px;
+    margin-top: 70px;
+}
+
+.imagen-inicio img {
+    width: 100%;
+}
+
+.players {
+    display: flex;
+    width: 300px;
+    height: auto;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+}
+
+.caja-online{
+    color: white;
+    display: flex;
+    width: 200px;
+    height: 60px;
+    background-color: #D6A022;
+    border-radius: 200px;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    margin-top: 70px;
+}
+
+.cuadrado {
+    display: flex;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    background-color: #000000;
+    border-radius: 100%;
+    margin-right: 8px;
+}
+
+.circulo{
+    align-self: center;
+    width: 8px;
+    height: 8px;
+    background-color: rgb(4, 255, 4);
+    border-radius: 100%;
+}
+
+.caja-donacion {
+    display: flex;
+    width: 200px;
+    height: 200px;
+    flex-direction: row;
+    align-self: flex-start;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.caja-donacion img {
+    width: 130px;
+    height: 130px;
+}
+
+.caja-donacion h2 {
+    font-size: 22px;
+    color: white;
+}
+
+/*Información*/
+
+.caja-contenido {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 150px;
+}
+
+.contenido{
+    display: flex;
+    justify-content:center;
+    background: radial-gradient(rgb(67, 8, 8), black ) no-repeat;
+    width: 1000px;
+    border:double 20px #D6A022;
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+    color: white;
+}
+
+h2 {
+    font-size: 25px;
+    color: grey;
+}
+
+.info{  
+   line-height: 40px;
+   border-top: solid white;
+   margin: 0 200px;
+}
+
+.caja-comandos{
+    margin-bottom: 10px;
+    border-bottom: solid white;
+}
+ 
+.contenido-hijo{
+    color: rgb(166, 194, 10);
+}
+ 
+.all-list {
+    list-style: none;
+}
+
+.all-list::before {
+    content: "\2B50";
+}
+
+/* Descargas */
+
+.body-descargas {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 150px;
+}
+
+.contenedor-descargas {
+    display: flex;
+    background: radial-gradient(rgb(67, 8, 8), black ) no-repeat;
+    width: 1000px;
+    height: 1000px;
+    border:double 20px #D6A022;
+    flex-flow: column;
+    text-align: center;
+    align-items: center;
+}
+
+.box-one {
+    display: flex;
+    width: 400px;
+    height: 80px;
+    background-color: black;
+    border: 3px solid #D6A022;
+    margin-top: 20px;
+}
+
+.box-two {
+    display: flex;
+    width: 400px;
+    height: 80px;
+    background-color: black;
+    border: 3px solid #D6A022;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.box-three {
+    display: flex;
+    width: 400px;
+    height: 80px;
+    background-color: black;
+    border: 3px solid #D6A022;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.box-image .img {
+    width: 100%;
+    align-self: center;
+}
+
+.box-image .mega {
+    width: 190px;
+}
+
+.box-image .g-drive {
+    width: 300px;
+}
+
+.box-image:hover {
+    background-color: #D6A022;
+}
+
+.contenedor-descargas h1 {
+    margin-top: 20px;
+    border-bottom: 4px solid white;
+}
+
+.contenedor-descargas h2 {
+    margin-top: 40px;
+}
+
+ /* Formulario de contacto  */
+
+ .formulario{
+    justify-content: space-around;
+    width: 800px;
+    margin-bottom: 150px;
+    
+   
+}
+ .formulario h2 {
+    padding-top: 30px;
+    padding-right: 50px;
+    font-size: 70px;
+    color: #ebeaea;
+    text-align: center;
+  }
+  
+  label {
+    font-size: 30px;
+    color: white;
+    line-height: 60px;
+    
+  }
+  
+  input, textarea{
+    border-radius: 15px;
+    padding: 10px;
+    width: 100%;
+  }
+
+  /* Footer */
+
+  footer{
+   
+    width: 100%;
+    background-color: rgb(123, 6, 6);
+    position: absolute;
+    bottom: 0;
+    background-image: src="../imagenes/nav.png";
+  }
+  footer img{
+    width: 100%;
+    
+
+
+  }
+  
